@@ -1,4 +1,4 @@
-package com.ikar.example.groovy.rest.server.entities
+package com.ikar.example.groovy.rest.server.rest.entities
 
 
 class UserDTO implements Serializable {

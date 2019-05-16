@@ -1,7 +1,8 @@
-package com.ikar.example.groovy.rest.server.controllers
+package com.ikar.example.groovy.rest.server.rest.controllers.impl
 
-import com.ikar.example.groovy.rest.server.entities.UserDTO
-import com.ikar.example.groovy.rest.server.repositories.UserRepository
+import com.ikar.example.groovy.rest.server.rest.controllers.UserController
+import com.ikar.example.groovy.rest.server.rest.entities.UserDTO
+import com.ikar.example.groovy.rest.server.services.UserService
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
@@ -9,9 +10,9 @@ import org.springframework.web.bind.annotation.PutMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class UserControllerImpl{
+class UserControllerImpl implements UserController{
 
-    UserRepository userRepository
+    UserService userService
 
     @GetMapping("/user")
     UserDTO getUserById(Integer id) {

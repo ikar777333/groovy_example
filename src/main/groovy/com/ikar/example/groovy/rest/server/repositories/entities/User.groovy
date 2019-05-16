@@ -1,4 +1,4 @@
-package com.ikar.example.groovy.rest.server.entities
+package com.ikar.example.groovy.rest.server.repositories.entities
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
